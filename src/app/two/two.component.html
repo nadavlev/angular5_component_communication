@@ -1,0 +1,10 @@
+<p>
+  <input [(ngModel)]="textMessage">
+  <input type="button" value="update" (click)="updateService()">
+</p>
+<div>
+  Message from service:
+  <pre>
+    {{serviceMessages | json}}
+  </pre>
+</div>

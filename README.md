@@ -1,5 +1,12 @@
 # ComponentCommunication
 
+this Sample project demonstrates communication between two components using a service,
+
+the service manages a copy of the messages array for every consumer, 
+this is in order to avoid the consumer using a reference to a common object. 
+
+## General
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
