@@ -1,6 +1,8 @@
 {
   "name": "component-communication",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "Nadav Lev",
+  "repository": "https://github.com/nadavlev/angular5_component_communication.git",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
