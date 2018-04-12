@@ -10,8 +10,8 @@ export class CommunicationService {
   public serviceMessages: Message[];
   private consumerMap: Map<number, Message[]>;
 
-  private brodcastedMessage = new Subject<string>();
-  public brodcastedMessageObservable$ = this.brodcastedMessage.asObservable();
+  private broadcastedMessage = new Subject<string>();
+  public broadcastedMessageObservable$ = this.broadcastedMessage.asObservable();
 
   constructor() {
     this.serviceMessages = [];
@@ -36,13 +36,13 @@ export class CommunicationService {
     return of(this.consumerMap.get(consumerId)); // return a fresh copy, to avoid
   }
 
-  public messageBrodcasting(msg: string) {
-    this.brodcastedMessage.next(msg);
+  public messageBroadcasting(msg: string) {
+    this.broadcastedMessage.next(msg);
   }
 
   private timelyMessage() {
     setInterval(() => {
-      this.messageBrodcasting((new Date()).toISOString());
+      this.messageBroadcasting((new Date()).toISOString());
     }, 1000);
   }
 
