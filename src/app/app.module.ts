@@ -10,9 +10,7 @@ import {CommunicationService} from './communication.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    OneComponent,
-    TwoComponent
+    AppComponent, OneComponent, TwoComponent
   ],
   imports: [
     BrowserModule, FormsModule

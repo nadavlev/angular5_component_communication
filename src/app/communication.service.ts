@@ -3,7 +3,6 @@ import {Message} from './message';
 import {Observable} from 'rxjs/Observable';
 import {of} from 'rxjs/observable/of';
 import {Subject} from 'rxjs/Subject';
-import {setInterval} from 'timers';
 
 @Injectable()
 export class CommunicationService {
